@@ -1,0 +1,24 @@
+{
+  "name": "discord-package-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AryanAg08/Discord-Package-npm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AryanAg08/Discord-Package-npm/issues"
+  },
+  "homepage": "https://github.com/AryanAg08/Discord-Package-npm#readme",
+  "dependencies": {
+    "discord.js": "^14.6.0",
+    "fs": "^0.0.1-security"
+  }
+}
