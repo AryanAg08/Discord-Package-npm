@@ -1,4 +1,4 @@
-module.exports = async (Crenditals) => {
+ module.exports = async (Crenditals) => {
 
     if (Crenditals) {
 
@@ -20,6 +20,7 @@ module.exports = async (Crenditals) => {
             Intents.DirectMessageTyping,
             Intents.DirectMessageReactions,
             Intents.GuildMessageTyping,
+            Intents.MessageContent
         ]
 
         const client = new Client({
@@ -33,7 +34,7 @@ module.exports = async (Crenditals) => {
 
 
         const LoadFeatures = require("./Features/Load-features");
-        const LoadCmds = require("./Commands/Load-Cmds");
+        const LoadCmds = require("./Commands/load-commands");
     
         LoadFeatures(client);
         LoadCmds(client);
@@ -42,16 +43,19 @@ module.exports = async (Crenditals) => {
 
         console.log('Bot in Online');
 
+       if (Crenditals.mongo) {
 
+       
         const mongo = require("mongoose");
         const MongoPath = Crenditals.mongo;
 
-        await mongo.connect(MongoPath, {
-            keepAlive: true,
-        })
+         await mongo.connect(MongoPath, {
+             keepAlive: true,
+         })
 
         console.log("Mongo is working!!");
         return mongo;
+    }
     }
 
     else {
