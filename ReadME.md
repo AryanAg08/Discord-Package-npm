@@ -1,11 +1,15 @@
 #Install package using `npm init discord-package-npm`.
 
 1. Call `index.js` in your main File;
-2. Add Client to the File;
+2. Add Crenditals to the File;
 ```js
 const MainFile = require("Discord-Package-npm");
+const Crenditals = {
+    token: "YOUR_BOT_TOKEN",
+    mongo: "YOUR_MONGODB_CONNECTION_URL"
+}
 
-MainFile(client);
+MainFile(Crenditals);
 
 ```
 
