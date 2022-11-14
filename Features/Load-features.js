@@ -5,7 +5,7 @@ module.exports = (client) => {
     const readFeature = (dir) => {
         const Files = fs.readdirSync(path.join(__dirname, dir));
         for (const file of Files) {
-            const stat = fs.lstatSync(path.join(__dirname, file));
+            const stat = fs.lstatSync(path.join(__dirname, dir, file));
             if (stat.isDirectory()) {
                 readFeature(path.join(dir, file))
             } 
