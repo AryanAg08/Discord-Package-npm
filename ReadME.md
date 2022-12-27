@@ -15,3 +15,7 @@ MainFile(Crenditals);
 
 3. This will do everything; 
 4. Now you can go ahead and Install other packages as per your needs.
+
+## You can find the package here: 
+[![Github](https://github.com/AryanAg08/Discord-Package-npm)] 
+[![NPM](https://www.npmjs.com/package/discord-package-npm)]
